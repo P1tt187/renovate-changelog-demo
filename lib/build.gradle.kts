@@ -12,7 +12,7 @@ plugins {
     // Apply the java-library plugin for API and implementation separation.
     `java-library`
     
-    id("dev.olshevski.versions") version "1.0.4"
+    id ("com.github.ben-manes.versions") version "0.46.0"
 }
 
 repositories {
