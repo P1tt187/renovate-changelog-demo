@@ -9,6 +9,21 @@
       "matchPackageNames": ["com.google.guava:guava"],
       "versioning": "regex:^(?<major>\\d+)(\\.(?<minor>\\d+))?(\\.(?<patch>\\d+))?(-(?<compatibility>.*))?$",
       "customChangelogUrl": "https://github.com/google/guava" 
-     
+    }     ,
+    {
+      "matchDepNames": [
+        "semaphoreui/semaphore",
+        "docker.io/semaphoreui/semaphore"
+      ],
+      "customChangelogUrl": "https://github.com/ansible-semaphore/semaphore"
+    },
+    {
+      "matchDepNames": [
+        "gravitational/teleport-distroless",
+        "public.ecr.aws/gravitational/teleport-distroless"
+      ],
+      "customChangelogUrl": "https://github.com/gravitational/teleport/"
+    }
+
   ]
 }
