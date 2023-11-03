@@ -5,8 +5,8 @@
 	":rebaseStalePrs"
   ],
   
-  "commitMessageSuffix": "fooo {{releaseNotes}} {{#if hasReleaseNotes}}\n\nRelease Notes:\n{{#each releaseNotes}}{{this}}{{/each}}{{/if}}",
-  "fetchReleaseNotes": "pr",
+  "commitBody": "fooo {{releaseNotes}} {{#if hasReleaseNotes}}\n\nRelease Notes:\n{{#each releaseNotes}}{{this}}{{/each}}{{/if}}",     
+  "fetchReleaseNotes": "branch",
   "packageRules": [
     {
       "matchPackageNames": ["com.google.guava:guava"],
