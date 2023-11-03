@@ -5,7 +5,8 @@
 	":rebaseStalePrs"
   ],
   
-  "commitBody": "{{{changelogs}}}",  
+  "commitBody": "{{{changelogs}}}",   
+  "fetchReleaseNotes": "branch",
   "packageRules": [
     {
       "matchPackageNames": ["com.google.guava:guava"],
