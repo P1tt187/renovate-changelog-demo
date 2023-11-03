@@ -5,7 +5,7 @@
 	":rebaseStalePrs"
   ],
   
-  "commitBody": "{{{body}}}",   
+  "commitBody": "{{{releaseNotes}}}",   
   "fetchReleaseNotes": "branch",
   "packageRules": [
     {
