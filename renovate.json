@@ -6,7 +6,7 @@
   ],
   
   "commitBody": "{{{releaseNotes}}}",   
-  "fetchReleaseNotes": "branch",
+  "fetchReleaseNotes": "pr",
   "packageRules": [
     {
       "matchPackageNames": ["com.google.guava:guava"],
