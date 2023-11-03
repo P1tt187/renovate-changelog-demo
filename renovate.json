@@ -5,7 +5,7 @@
 	":rebaseStalePrs"
   ],
   
-  "commitBody": "{{releaseNotes}} {{#if releaseNotes}}\n\nRelease Notes:\n{{#each releaseNotes}}{{this}}{{/each}}{{/if}}",   
+  "commitBody": "fooo {{releaseNotes}} {{#if hasReleaseNotes}}\n\nRelease Notes:\n{{#each releaseNotes}}{{this}}{{/each}}{{/if}}",   
   "fetchReleaseNotes": "pr",
   "packageRules": [
     {
