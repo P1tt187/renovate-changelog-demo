@@ -11,7 +11,7 @@
     {
       "matchPackageNames": ["com.google.guava:guava"],
       "versioning": "regex:^(?<major>\\d+)(\\.(?<minor>\\d+))?(\\.(?<patch>\\d+))?(-(?<compatibility>.*))?$",
-      
+      "extractVersion": "^v?(?<version>.*)(-(?<compatibility>.*))?$",
       "customChangelogUrl": "https://github.com/google/guava" 
     }     ,
     {
