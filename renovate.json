@@ -6,7 +6,7 @@
   ],
   
   "commitBody": "fooo {{depNameLinked}} {{{header}}}{{{table}}}{{{warnings}}}{{{notes}}}{{{changelogs}}} {{notes}} {{{notes}}} {{#if hasReleaseNotes}}\n\nRelease Notes:\n{{releaseNotes}}{{/if}}",     
-  "fetchReleaseNotes": "branch",
+  "fetchChangeLogs": "branch",
   "packageRules": [
     {
       "matchPackageNames": ["com.google.guava:guava"],
