@@ -27,6 +27,10 @@
         "public.ecr.aws/gravitational/teleport-distroless"
       ],
       "customChangelogUrl": "https://github.com/gravitational/teleport/"
+    },
+    {
+      "matchPackagePrefixes":["org.junit.jupiter"],
+      "customChangelogUrl": "https://github.com/junit-team/junit5"
     }
 
   ]
