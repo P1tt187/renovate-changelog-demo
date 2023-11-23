@@ -31,6 +31,12 @@
     {
       "matchPackagePrefixes":["org.junit.jupiter"],
       "customChangelogUrl": "https://github.com/junit-team/junit5"
+    },
+    {
+      "matchPackageNames": [
+        "com.github.ben-manes.versions:com.github.ben-manes.versions.gradle.plugin"
+      ],
+      "customChangelogUrl": "https://github.com/ben-manes/gradle-versions-plugin"
     }
 
   ]
