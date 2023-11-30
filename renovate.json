@@ -5,7 +5,7 @@
 	":rebaseStalePrs"
   ],
   
-  "commitBody": "fooo {{depNameLinked}} {{{header}}}{{{table}}}{{{warnings}}}{{{notes}}}{{{changelogs}}} {{releases}}{{logJSON}} {{#if hasReleaseNotes}}\n\nRelease Notes:\n{{releaseNotes}}{{else}}keine notes{{/if}}",     
+  "commitBody": "fooo {{depNameLinked}} {{{header}}}{{{table}}}{{{warnings}}}{{{notes}}}{{{changelogs}}} {{releases}}{{logJSON}} {{#if hasReleaseNotes}}\n\nRelease Notes:\n{{releaseNotes}}{{else}}keine notes{{/if}} {{logJSON}} {{body}}",     
   "fetchChangeLogs": "branch",
   "packageRules": [
     {
