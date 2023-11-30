@@ -5,7 +5,7 @@
 	":rebaseStalePrs"
   ],
   
-  "commitBody": "\n\n{{#changelog}}\n\nChangelog:\n\n{{.}}\n\n{{/changelog}} ",     
+  "commitBody": "\n\n{{#changelog}}\n\nChangelog:\n\n{{.}}\n\n{{/changelog}} {{releases }}",     
   "fetchChangeLogs": "branch",
   "packageRules": [
     {
