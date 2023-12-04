@@ -42,7 +42,7 @@
       "matchPackageNames": [
         "com.diffplug.spotless:spotless-plugin-gradle"
       ],
-      "customChangelogUrl": "https://github.com/diffplug/spotless/tree/main/plugin-gradle",
+      "customChangelogUrl": "https://github.com/diffplug/spotless/blob/main/plugin-gradle/CHANGES.md",
       "extractVersion": "(?<version>\\d+(?:\\.\\d+)+)"
     }
   ]
