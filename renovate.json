@@ -37,7 +37,13 @@
         "com.github.ben-manes.versions:com.github.ben-manes.versions.gradle.plugin"
       ],
       "customChangelogUrl": "https://github.com/ben-manes/gradle-versions-plugin"
+    },
+    {
+      "matchPackageNames": [
+        "com.diffplug.spotless:spotless-plugin-gradle"
+      ],
+      "customChangelogUrl": "https://github.com/diffplug/spotless/tree/main/plugin-gradle",
+      "extractVersion": "(?<version>\\d+(?:\\.\\d+)+)"
     }
-
   ]
 }
