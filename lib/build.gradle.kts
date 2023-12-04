@@ -13,6 +13,7 @@ plugins {
     `java-library`
     
     id ("com.github.ben-manes.versions") version "0.46.0"
+    id ("com.diffplug.spotless") version "6.23.2"
 }
 
 repositories {
