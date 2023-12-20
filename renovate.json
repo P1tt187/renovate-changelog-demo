@@ -4,7 +4,7 @@
     "config:recommended",
 	":rebaseStalePrs"
   ],
-  
+  "allowedPostUpgradeCommands": ["./gradlew spotlessApply"],
   "commitBody": "\n\n{{#changelog}}\n\nChangelog:\n\n{{.}}\n\n{{/changelog}} {{releases }}",     
   "fetchChangeLogs": "branch",
   "packageRules": [
