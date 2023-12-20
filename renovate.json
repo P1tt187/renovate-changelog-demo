@@ -4,7 +4,7 @@
     "config:recommended",
 	":rebaseStalePrs"
   ],
-  "allowedPostUpgradeCommands": ["./gradlew spotlessApply"],
+  "allowedPostUpgradeCommands": ["^.\/gradlew spotlessApply"],
   "commitBody": "\n\n{{#changelog}}\n\nChangelog:\n\n{{.}}\n\n{{/changelog}} {{releases }}",     
   "fetchChangeLogs": "branch",
   "packageRules": [
@@ -43,7 +43,12 @@
         "com.diffplug.spotless:spotless-plugin-gradle"
       ],
       "customChangelogUrl": "https://raw.githubusercontent.com/diffplug/spotless/main/plugin-gradle/CHANGES.md",
-      "extractVersion": "(?<version>\\d+(?:\\.\\d+)+)"
+      "extractVersion": "(?<version>\\d+(?:\\.\\d+)+)",
+      "postUpgradeTasks": {
+        "commands": ["./gradlew spotlessApply"],
+        "fileFilters": ["**/*.java"],
+        "executionMode": "update"
+      }
     }
   ],
   "regexManagers": [
@@ -56,10 +61,5 @@
       "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
       "extractVersionTemplate": "^v?(?<version>.*)$"
     }
-  ],
-  "postUpgradeTasks": {
-    "commands": ["./gradlew spotlessApply"],
-    "fileFilters": ["**/*.java"],
-    "executionMode": "update"
-  }
+  ]  
 }
