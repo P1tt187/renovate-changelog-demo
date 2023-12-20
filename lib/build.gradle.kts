@@ -48,3 +48,9 @@ tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+
+spotless{
+    java {
+         googleJavaFormat('1.8')
+    }
+}

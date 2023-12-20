@@ -1,0 +1,3 @@
+[versions]
+# renovate: depName=google/google-java-format
+google-java-format = "1.19.0"

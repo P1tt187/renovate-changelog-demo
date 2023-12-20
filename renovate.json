@@ -45,5 +45,21 @@
       "customChangelogUrl": "https://raw.githubusercontent.com/diffplug/spotless/main/plugin-gradle/CHANGES.md",
       "extractVersion": "(?<version>\\d+(?:\\.\\d+)+)"
     }
-  ]
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["(^|/)gradle/.*\\.toml$"],
+      "matchStrings": [
+        "# renovate:( datasource=(?<datasource>[^ ]+?))? depName=(?<depName>[^ ]+?)( versioning=(?<versioning>[^ ]+?))?\\s+[^\"]+\"(?<currentValue>[^\"]+?)\""
+      ],
+      "datasourceTemplate": "{{#if datasource}}{{{datasource}}}{{else}}github-releases{{/if}}",
+      "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
+      "extractVersionTemplate": "^v?(?<version>.*)$"
+    }
+  ],
+  "postUpgradeTasks": {
+    "commands": ["./gradlew spotlessApply"],
+    "fileFilters": ["**/*.java"],
+    "executionMode": "update"
+  }
 }
