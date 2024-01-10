@@ -65,7 +65,8 @@
         "org.asciidoctor.jvm.convert:org.asciidoctor.jvm.convert.gradle.plugin",
         "org.asciidoctor.jvm.pdf:org.asciidoctor.jvm.pdf.gradle.plugin"
       ],
-      "customChangelogUrl": "https://github.com/asciidoctor/asciidoctor-gradle-plugin"
+      "customChangelogUrl": "https://github.com/asciidoctor/asciidoctor-gradle-plugin",
+      "extractVersion": "(?<version>\\d+(?:_|\\.\\d+)+)"
     }
   ],
   "regexManagers": [
