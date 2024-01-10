@@ -1,3 +1,11 @@
 [versions]
 # renovate: depName=google/google-java-format
 google-java-format = "1.19.0"
+
+# Plugins
+asciidoctor = "3.3.2"
+
+[plugins]
+# AsciiDoc-Support für Gradle (https://github.com/asciidoctor/asciidoctor-gradle-plugin)
+asciidoctor-convert = { id = "org.asciidoctor.jvm.convert", version.ref = "asciidoctor" }
+asciidoctor-pdf = { id = "org.asciidoctor.jvm.pdf", version.ref = "asciidoctor" }

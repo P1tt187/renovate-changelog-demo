@@ -14,6 +14,8 @@ plugins {
     
     id ("com.github.ben-manes.versions") version "0.46.0"
     id ("com.diffplug.spotless") version "6.23.2"
+    alias(libs.plugins.asciidoctor.convert)
+    alias(libs.plugins.asciidoctor.pdf)
 }
 
 repositories {
@@ -51,6 +53,6 @@ tasks.named<Test>("test") {
 
 spotless{
     java {
-         googleJavaFormat('1.8')
+         googleJavaFormat("1.10.0")
     }
 }
