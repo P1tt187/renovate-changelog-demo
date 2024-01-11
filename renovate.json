@@ -66,7 +66,8 @@
         "org.asciidoctor.jvm.pdf:org.asciidoctor.jvm.pdf.gradle.plugin"
       ],
       "customChangelogUrl": "https://github.com/asciidoctor/asciidoctor-gradle-plugin",
-      "extractVersion": "(?<version>\\d+(?:_|\\.\\d+)+)"
+      "extractVersion": "(?<version>\\d+(?:_|\\.\\d+)+)",
+      "versioning": "regex:^release_|\\.(?<major>\\d+)(_|\\.(?<minor>\\d+)_|\\.(?<patch>\\d+))?$"
     }
   ],
   "regexManagers": [
