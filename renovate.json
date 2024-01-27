@@ -87,6 +87,9 @@
       "matchStrings": [
         "# renovate:( datasource=(?<datasource>[^ ]+?))? depName=(?<depName>[^ ]+?)( versioning=(?<versioning>[^ ]+?))?\\s+[^\"]+\"(?<currentValue>[^\"]+?)\""
       ],
+      "fileMatch": [
+        "(^|/)gradle/.*\\.toml$"
+      ],
       "datasourceTemplate": "{{#if datasource}}{{{datasource}}}{{else}}github-releases{{/if}}",
       "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
       "extractVersionTemplate": "^v?(?<version>.*)$"
