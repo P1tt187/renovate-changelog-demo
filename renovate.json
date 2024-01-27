@@ -71,19 +71,6 @@
       "versioning": "regex:(?<major>\\d+)(_|\\.(?<minor>\\d+)_|\\.(?<patch>\\d+))?$"
     }
   ],
-  "regexManagers": [
-    {
-      "fileMatch": [
-        "(^|/)gradle/.*\\.toml$"
-      ],
-      "matchStrings": [
-        "# renovate:( datasource=(?<datasource>[^ ]+?))? depName=(?<depName>[^ ]+?)( versioning=(?<versioning>[^ ]+?))?\\s+[^\"]+\"(?<currentValue>[^\"]+?)\""
-      ],
-      "datasourceTemplate": "{{#if datasource}}{{{datasource}}}{{else}}github-releases{{/if}}",
-      "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
-      "extractVersionTemplate": "^v?(?<version>.*)$"
-    }
-  ],
   "customManagers": [
     {
       "customType": "regex",
@@ -94,6 +81,15 @@
       "matchStrings": [
         "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+?)(?: (lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s(?:ENV|ARG) .+?_VERSION[ =]\"?(?<currentValue>.+?)\"?\\s"
       ]
+    },
+    {
+      "customType": "regex",
+      "matchStrings": [
+        "# renovate:( datasource=(?<datasource>[^ ]+?))? depName=(?<depName>[^ ]+?)( versioning=(?<versioning>[^ ]+?))?\\s+[^\"]+\"(?<currentValue>[^\"]+?)\""
+      ],
+      "datasourceTemplate": "{{#if datasource}}{{{datasource}}}{{else}}github-releases{{/if}}",
+      "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
+      "extractVersionTemplate": "^v?(?<version>.*)$"
     }
   ]
 }
