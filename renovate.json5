@@ -17,39 +17,39 @@
       ],
       versioning: 'regex:^(?<major>\\d+)(\\.(?<minor>\\d+))?(\\.(?<patch>\\d+))?(-(?<compatibility>.*))?$',
       extractVersion: '^v?(?<version>.*)(-(?<compatibility>.*))?$',
-      customChangelogUrl: 'https://github.com/google/guava',
+      changelogUrl: 'https://github.com/google/guava',
     },
     {
       matchDepNames: [
         'semaphoreui/semaphore',
         'docker.io/semaphoreui/semaphore',
       ],
-      customChangelogUrl: 'https://github.com/ansible-semaphore/semaphore',
+      changelogUrl: 'https://github.com/ansible-semaphore/semaphore',
     },
     {
       matchDepNames: [
         'gravitational/teleport-distroless',
         'public.ecr.aws/gravitational/teleport-distroless',
       ],
-      customChangelogUrl: 'https://github.com/gravitational/teleport/',
+      changelogUrl: 'https://github.com/gravitational/teleport/',
     },
     {
       matchPackagePrefixes: [
         'org.junit.jupiter',
       ],
-      customChangelogUrl: 'https://github.com/junit-team/junit5',
+      changelogUrl: 'https://github.com/junit-team/junit5',
     },
     {
       matchPackageNames: [
         'com.github.ben-manes.versions:com.github.ben-manes.versions.gradle.plugin',
       ],
-      customChangelogUrl: 'https://github.com/ben-manes/gradle-versions-plugin',
+      changelogUrl: 'https://github.com/ben-manes/gradle-versions-plugin',
     },
     {
       matchPackageNames: [
         'com.diffplug.spotless:spotless-plugin-gradle',
       ],
-      customChangelogUrl: 'https://raw.githubusercontent.com/diffplug/spotless/main/plugin-gradle/CHANGES.md',
+      changelogUrl: 'https://raw.githubusercontent.com/diffplug/spotless/main/plugin-gradle/CHANGES.md',
       extractVersion: '(?<version>\\d+(?:\\.\\d+)+)',
       postUpgradeTasks: {
         commands: [
@@ -66,7 +66,7 @@
         'org.asciidoctor.jvm.convert:org.asciidoctor.jvm.convert.gradle.plugin',
         'org.asciidoctor.jvm.pdf:org.asciidoctor.jvm.pdf.gradle.plugin',
       ],
-      customChangelogUrl: 'https://github.com/asciidoctor/asciidoctor-gradle-plugin',
+      changelogUrl: 'https://github.com/asciidoctor/asciidoctor-gradle-plugin',
       extractVersion: '(?<version>\\d+(?:_|\\.\\d+)+)',
       versioning: 'regex:(?<major>\\d+)(_|\\.(?<minor>\\d+)_|\\.(?<patch>\\d+))?$',
     },
