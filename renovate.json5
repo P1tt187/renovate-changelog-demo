@@ -34,10 +34,10 @@
       changelogUrl: 'https://github.com/gravitational/teleport/',
     },
     {
-      matchPackagePrefixes: [
-        'org.junit.jupiter',
-      ],
       changelogUrl: 'https://github.com/junit-team/junit5',
+      matchPackageNames: [
+        'org.junit.jupiter{/,}**',
+      ],
     },
     {
       matchPackageNames: [
