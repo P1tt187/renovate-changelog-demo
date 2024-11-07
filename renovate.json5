@@ -4,10 +4,7 @@
     'config:best-practices',
     ':rebaseStalePrs',
     'customManagers:dockerfileVersions',
-  ],
-  allowedPostUpgradeCommands: [
-    '^./gradlew spotlessApply',
-  ],
+  ],  
   commitBody: '\n\n{{#changelog}}\n\nChangelog:\n\n{{.}}\n\n{{/changelog}} {{releases }}',
   fetchChangeLogs: 'branch',
   packageRules: [
@@ -50,16 +47,7 @@
         'com.diffplug.spotless:spotless-plugin-gradle',
       ],
       changelogUrl: 'https://raw.githubusercontent.com/diffplug/spotless/main/plugin-gradle/CHANGES.md',
-      extractVersion: '(?<version>\\d+(?:\\.\\d+)+)',
-      postUpgradeTasks: {
-        commands: [
-          './gradlew spotlessApply',
-        ],
-        fileFilters: [
-          '**/*.java',
-        ],
-        executionMode: 'update',
-      },
+      extractVersion: '(?<version>\\d+(?:\\.\\d+)+)',      
     },
     {
       matchPackageNames: [
