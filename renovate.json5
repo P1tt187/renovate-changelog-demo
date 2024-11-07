@@ -24,7 +24,7 @@
         'semaphoreui/semaphore',
         'docker.io/semaphoreui/semaphore',
       ],
-      changelogUrl: 'https://github.com/ansible-semaphore/semaphore',
+      sourceUrl: 'https://github.com/ansible-semaphore/semaphore',
     },
     {
       matchDepNames: [
