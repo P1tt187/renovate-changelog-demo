@@ -14,7 +14,7 @@
       ],
       versioning: 'regex:^(?<major>\\d+)(\\.(?<minor>\\d+))?(\\.(?<patch>\\d+))?(-(?<compatibility>.*))?$',
       extractVersion: '^v?(?<version>.*)(-(?<compatibility>.*))?$',
-      changelogUrl: 'https://github.com/google/guava',
+      sourceUrl: 'https://github.com/google/guava',
     },
     {
       matchDepNames: [
@@ -28,10 +28,10 @@
         'gravitational/teleport-distroless',
         'public.ecr.aws/gravitational/teleport-distroless',
       ],
-      changelogUrl: 'https://github.com/gravitational/teleport/',
+      sourceUrl: 'https://github.com/gravitational/teleport/',
     },
     {
-      changelogUrl: 'https://github.com/junit-team/junit5',
+      sourceUrl: 'https://github.com/junit-team/junit5',
       matchPackageNames: [
         'org.junit.jupiter{/,}**',
       ],
@@ -40,13 +40,13 @@
       matchPackageNames: [
         'com.github.ben-manes.versions:com.github.ben-manes.versions.gradle.plugin',
       ],
-      changelogUrl: 'https://github.com/ben-manes/gradle-versions-plugin',
+      sourceUrl: 'https://github.com/ben-manes/gradle-versions-plugin',
     },
     {
       matchPackageNames: [
         'com.diffplug.spotless:spotless-plugin-gradle',
       ],
-      changelogUrl: 'https://raw.githubusercontent.com/diffplug/spotless/main/plugin-gradle/CHANGES.md',
+      sourceUrl: 'https://raw.githubusercontent.com/diffplug/spotless/main/plugin-gradle/CHANGES.md',
       extractVersion: '(?<version>\\d+(?:\\.\\d+)+)',      
     },
     {
@@ -54,7 +54,7 @@
         'org.asciidoctor.jvm.convert:org.asciidoctor.jvm.convert.gradle.plugin',
         'org.asciidoctor.jvm.pdf:org.asciidoctor.jvm.pdf.gradle.plugin',
       ],
-      changelogUrl: 'https://github.com/asciidoctor/asciidoctor-gradle-plugin',
+      sourceUrl: 'https://github.com/asciidoctor/asciidoctor-gradle-plugin',
       extractVersion: '(?<version>\\d+(?:_|\\.\\d+)+)',
       versioning: 'regex:(?<major>\\d+)(_|\\.(?<minor>\\d+)_|\\.(?<patch>\\d+))?$',
     },
