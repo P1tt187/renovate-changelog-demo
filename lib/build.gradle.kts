@@ -12,7 +12,7 @@ plugins {
     // Apply the java-library plugin for API and implementation separation.
     `java-library`
     
-    id ("com.github.ben-manes.versions") version "0.46.0"
+    id ("com.github.ben-manes.versions") version "0.51.0"
     id ("com.diffplug.spotless") version "6.23.2"
     id("org.asciidoctor.jvm.convert") version "3.3.2"
     id("org.asciidoctor.jvm.pdf") version "3.3.2"
