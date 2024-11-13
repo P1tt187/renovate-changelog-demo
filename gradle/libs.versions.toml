@@ -3,7 +3,7 @@
 google-java-format = "1.19.2"
 
 # Plugins
-asciidoctor = "3.3.2"
+asciidoctor = "2.4.0"
 
 [plugins]
 # AsciiDoc-Support für Gradle (https://github.com/asciidoctor/asciidoctor-gradle-plugin)
