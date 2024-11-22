@@ -1,4 +1,4 @@
-FROM semaphoreui/semaphore:v2.9.4@sha256:6ca03d6bd58f3c59d798fe8bc56e47865fbe9930d0c0f38f9edbdd24087a6ace
+FROM semaphoreui/semaphore:v2.10.43@sha256:eda4e5adc6d45cbcf16c07343d014809e2a39a0efcc31f4d07135b31cd01a78a
 # renovate: datasource=github-tags depName=Imagick/imagick versioning=semver-coerced extractVersion=(?<version>.*)$
 ARG IMAGICK_PECL_VERSION=3.5.0
 
