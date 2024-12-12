@@ -1,6 +1,6 @@
 [versions]
 # renovate: depName=google/google-java-format
-google-java-format = "1.19.2"
+google-java-format = "1.25.2"
 
 # Plugins
 asciidoctor = "3.3.2"
