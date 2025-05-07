@@ -4,7 +4,7 @@
     'config:best-practices',
     ':rebaseStalePrs',
     'customManagers:dockerfileVersions',
-  ],  
+  ],
   commitBody: '\n\n{{#changelog}}\n\nChangelog:\n\n{{.}}\n\n{{/changelog}} {{releases }}',
   fetchChangeLogs: 'branch',
   packageRules: [
@@ -47,7 +47,7 @@
         'com.diffplug.spotless:spotless-plugin-gradle',
       ],
       sourceUrl: 'https://raw.githubusercontent.com/diffplug/spotless/main/plugin-gradle/CHANGES.md',
-      extractVersion: '(?<version>\\d+(?:\\.\\d+)+)',      
+      extractVersion: '(?<version>\\d+(?:\\.\\d+)+)',
     },
     {
       matchPackageNames: [
@@ -65,8 +65,8 @@
       matchStrings: [
         '# renovate:( datasource=(?<datasource>[^ ]+?))? depName=(?<depName>[^ ]+?)( versioning=(?<versioning>[^ ]+?))?\\s+[^"]+"(?<currentValue>[^"]+?)"',
       ],
-      fileMatch: [
-        '(^|/)gradle/.*\\.toml$',
+      managerFilePatterns: [
+        '/(^|/)gradle/.*\\.toml$/',
       ],
       datasourceTemplate: '{{#if datasource}}{{{datasource}}}{{else}}github-releases{{/if}}',
       versioningTemplate: '{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}',
@@ -74,9 +74,9 @@
     },
     {
       customType: 'regex',
-      fileMatch: [
-        '(^|/|\\.)Dockerfile$',
-        '(^|/)Dockerfile[^/]*$',
+      managerFilePatterns: [
+        '/(^|/|\\.)Dockerfile$/',
+        '/(^|/)Dockerfile[^/]*$/',
       ],
       matchStrings: [
         '# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+?)(?: (lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s(?:ENV|ARG) .+?_VERSION[ =]"?(?<currentValue>.+?)"?\\s',
